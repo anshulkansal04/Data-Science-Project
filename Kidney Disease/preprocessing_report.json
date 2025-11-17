@@ -1,0 +1,458 @@
+{
+    "original_shape": [
+        400,
+        26
+    ],
+    "transformations": [],
+    "encodings": {
+        "rbc": {
+            "normal": 1,
+            "abnormal": 0
+        },
+        "pc": {
+            "normal": 1,
+            "abnormal": 0
+        },
+        "pcc": {
+            "notpresent": 0,
+            "present": 1
+        },
+        "ba": {
+            "notpresent": 0,
+            "present": 1
+        },
+        "htn": {
+            "no": 0,
+            "yes": 1
+        },
+        "dm": {
+            "no": 0,
+            "yes": 1
+        },
+        "cad": {
+            "no": 0,
+            "yes": 1
+        },
+        "appet": {
+            "poor": 0,
+            "good": 1
+        },
+        "pe": {
+            "no": 0,
+            "yes": 1
+        },
+        "ane": {
+            "no": 0,
+            "yes": 1
+        },
+        "sg": {
+            "1.005": 0,
+            "1.01": 1,
+            "1.015": 2,
+            "1.02": 3,
+            "1.025": 4
+        },
+        "classification": {
+            "notckd": 0,
+            "ckd": 1
+        }
+    },
+    "missing_value_strategy": {
+        "age": {
+            "method": "median",
+            "value": 55.0,
+            "missing_count": 9
+        },
+        "bp": {
+            "method": "median",
+            "value": 80.0,
+            "missing_count": 12
+        },
+        "sg": {
+            "method": "median",
+            "value": 1.02,
+            "missing_count": 47
+        },
+        "al": {
+            "method": "median",
+            "value": 0.0,
+            "missing_count": 46
+        },
+        "su": {
+            "method": "median",
+            "value": 0.0,
+            "missing_count": 49
+        },
+        "bgr": {
+            "method": "median",
+            "value": 121.0,
+            "missing_count": 44
+        },
+        "bu": {
+            "method": "median",
+            "value": 42.0,
+            "missing_count": 19
+        },
+        "sc": {
+            "method": "median",
+            "value": 1.3,
+            "missing_count": 17
+        },
+        "sod": {
+            "method": "median",
+            "value": 138.0,
+            "missing_count": 87
+        },
+        "pot": {
+            "method": "median",
+            "value": 4.4,
+            "missing_count": 88
+        },
+        "hemo": {
+            "method": "median",
+            "value": 12.649999999999999,
+            "missing_count": 52
+        },
+        "rbc": {
+            "method": "mode",
+            "value": "normal",
+            "missing_count": 152
+        },
+        "pc": {
+            "method": "mode",
+            "value": "normal",
+            "missing_count": 65
+        },
+        "pcc": {
+            "method": "mode",
+            "value": "notpresent",
+            "missing_count": 4
+        },
+        "ba": {
+            "method": "mode",
+            "value": "notpresent",
+            "missing_count": 4
+        },
+        "pcv": {
+            "method": "mode",
+            "value": "41",
+            "missing_count": 70
+        },
+        "wc": {
+            "method": "mode",
+            "value": "9800",
+            "missing_count": 105
+        },
+        "rc": {
+            "method": "mode",
+            "value": "5.2",
+            "missing_count": 130
+        },
+        "htn": {
+            "method": "mode",
+            "value": "no",
+            "missing_count": 2
+        },
+        "dm": {
+            "method": "mode",
+            "value": "no",
+            "missing_count": 2
+        },
+        "cad": {
+            "method": "mode",
+            "value": "no",
+            "missing_count": 2
+        },
+        "appet": {
+            "method": "mode",
+            "value": "good",
+            "missing_count": 1
+        },
+        "pe": {
+            "method": "mode",
+            "value": "no",
+            "missing_count": 1
+        },
+        "ane": {
+            "method": "mode",
+            "value": "no",
+            "missing_count": 1
+        }
+    },
+    "outlier_treatment": {
+        "age": {
+            "method": "IQR_capping",
+            "lower_bound": 9.0,
+            "upper_bound": 97.0,
+            "outliers_treated": 10
+        },
+        "bp": {
+            "method": "IQR_capping",
+            "lower_bound": 55.0,
+            "upper_bound": 95.0,
+            "outliers_treated": 36
+        },
+        "sg": {
+            "method": "IQR_capping",
+            "lower_bound": 0.5,
+            "upper_bound": 4.5,
+            "outliers_treated": 7
+        },
+        "su": {
+            "method": "IQR_capping",
+            "lower_bound": 0.0,
+            "upper_bound": 0.0,
+            "outliers_treated": 61
+        },
+        "rbc": {
+            "method": "IQR_capping",
+            "lower_bound": 1.0,
+            "upper_bound": 1.0,
+            "outliers_treated": 47
+        },
+        "pc": {
+            "method": "IQR_capping",
+            "lower_bound": 1.0,
+            "upper_bound": 1.0,
+            "outliers_treated": 76
+        },
+        "pcc": {
+            "method": "IQR_capping",
+            "lower_bound": 0.0,
+            "upper_bound": 0.0,
+            "outliers_treated": 42
+        },
+        "ba": {
+            "method": "IQR_capping",
+            "lower_bound": 0.0,
+            "upper_bound": 0.0,
+            "outliers_treated": 22
+        },
+        "bgr": {
+            "method": "IQR_capping",
+            "lower_bound": 27.5,
+            "upper_bound": 223.5,
+            "outliers_treated": 53
+        },
+        "bu": {
+            "method": "IQR_capping",
+            "lower_bound": -25.125,
+            "upper_bound": 113.875,
+            "outliers_treated": 41
+        },
+        "sc": {
+            "method": "IQR_capping",
+            "lower_bound": -1.8375000000000004,
+            "upper_bound": 5.4625,
+            "outliers_treated": 53
+        },
+        "sod": {
+            "method": "IQR_capping",
+            "lower_bound": 126.0,
+            "upper_bound": 150.0,
+            "outliers_treated": 18
+        },
+        "pot": {
+            "method": "IQR_capping",
+            "lower_bound": 2.8000000000000003,
+            "upper_bound": 6.0,
+            "outliers_treated": 14
+        },
+        "hemo": {
+            "method": "IQR_capping",
+            "lower_bound": 5.25,
+            "upper_bound": 20.25,
+            "outliers_treated": 2
+        },
+        "cad": {
+            "method": "IQR_capping",
+            "lower_bound": 0.0,
+            "upper_bound": 0.0,
+            "outliers_treated": 34
+        },
+        "appet": {
+            "method": "IQR_capping",
+            "lower_bound": 1.0,
+            "upper_bound": 1.0,
+            "outliers_treated": 82
+        },
+        "pe": {
+            "method": "IQR_capping",
+            "lower_bound": 0.0,
+            "upper_bound": 0.0,
+            "outliers_treated": 76
+        },
+        "ane": {
+            "method": "IQR_capping",
+            "lower_bound": 0.0,
+            "upper_bound": 0.0,
+            "outliers_treated": 60
+        }
+    },
+    "feature_engineering": [
+        {
+            "feature": "bun_creatinine_ratio",
+            "formula": "bu / sc",
+            "description": "Blood Urea Nitrogen to Creatinine Ratio"
+        },
+        {
+            "feature": "albumin_protein_index",
+            "formula": "al * pc",
+            "description": "Albumin-Protein interaction index"
+        },
+        {
+            "feature": "comorbidity_count",
+            "formula": "sum(htn, dm, ane, pe)",
+            "description": "Total number of comorbidities"
+        },
+        {
+            "feature": "risk_score",
+            "formula": "mean(z_scores(bgr, bu, sc, bp))",
+            "description": "Composite risk score based on key clinical parameters"
+        },
+        {
+            "feature": "age_category_encoded",
+            "formula": "binned age (young:0-30, middle:31-50, senior:51-70, elderly:71+)",
+            "description": "Age categorized into life stages"
+        },
+        {
+            "feature": "bun_creatinine_ratio",
+            "formula": "bu / sc",
+            "description": "Blood Urea Nitrogen to Creatinine Ratio"
+        },
+        {
+            "feature": "albumin_protein_index",
+            "formula": "al * pc",
+            "description": "Albumin-Protein interaction index"
+        },
+        {
+            "feature": "comorbidity_count",
+            "formula": "sum(htn, dm, ane, pe)",
+            "description": "Total number of comorbidities"
+        },
+        {
+            "feature": "risk_score",
+            "formula": "mean(z_scores(bgr, bu, sc, bp))",
+            "description": "Composite risk score based on key clinical parameters"
+        },
+        {
+            "feature": "age_category_encoded",
+            "formula": "binned age (young:0-30, middle:31-50, senior:51-70, elderly:71+)",
+            "description": "Age categorized into life stages"
+        },
+        {
+            "feature": "hemo_rbc_ratio",
+            "formula": "hemo / rc",
+            "description": "Hemoglobin to RBC ratio (anemia severity indicator)"
+        },
+        {
+            "feature": "bp_category_encoded",
+            "formula": "binned bp (normal:0-80, elevated:81-90, high:91-120, very_high:121+)",
+            "description": "Blood pressure categorized"
+        }
+    ],
+    "scaling": {
+        "method": "StandardScaler",
+        "features_scaled": [
+            "age",
+            "bp",
+            "sg",
+            "al",
+            "su",
+            "rbc",
+            "pc",
+            "pcc",
+            "ba",
+            "bgr",
+            "bu",
+            "sc",
+            "sod",
+            "pot",
+            "hemo",
+            "pcv",
+            "wc",
+            "rc",
+            "htn",
+            "dm",
+            "cad",
+            "appet",
+            "pe",
+            "ane",
+            "bun_creatinine_ratio",
+            "albumin_protein_index",
+            "comorbidity_count",
+            "risk_score",
+            "hemo_rbc_ratio"
+        ],
+        "means": {
+            "age": 51.6475,
+            "bp": 75.825,
+            "sg": 2.55125,
+            "al": 0.9,
+            "su": 0.0,
+            "rbc": 1.0,
+            "pc": 1.0,
+            "pcc": 0.0,
+            "ba": 0.0,
+            "bgr": 134.01125,
+            "bu": 50.2776875,
+            "sc": 2.07140625,
+            "sod": 138.2175,
+            "pot": 4.38275,
+            "hemo": 12.549000000000001,
+            "pcv": 39.26,
+            "wc": 8774.5,
+            "rc": 4.86875,
+            "htn": 0.3675,
+            "dm": 0.3425,
+            "cad": 0.0,
+            "appet": 1.0,
+            "pe": 0.0,
+            "ane": 0.0,
+            "bun_creatinine_ratio": 30.588030821363756,
+            "albumin_protein_index": 0.9,
+            "comorbidity_count": 0.71,
+            "risk_score": 3.552713678800501e-17,
+            "hemo_rbc_ratio": 2.6054333825182567
+        },
+        "stds": {
+            "age": 16.735090192466846,
+            "bp": 10.9576172136099,
+            "sg": 1.0667700958969557,
+            "al": 1.3114877048604001,
+            "su": 1.0,
+            "rbc": 1.0,
+            "pc": 1.0,
+            "pcc": 1.0,
+            "ba": 1.0,
+            "bgr": 46.034774882011746,
+            "bu": 30.24607480673887,
+            "sc": 1.6286766025168833,
+            "sod": 5.266896026123926,
+            "pot": 0.6344899033869649,
+            "hemo": 2.6933179351870065,
+            "pcv": 8.180916819036849,
+            "wc": 2593.742421675676,
+            "rc": 0.8705161902572519,
+            "htn": 0.48212420598845684,
+            "dm": 0.4745458355101222,
+            "cad": 1.0,
+            "appet": 1.0,
+            "pe": 1.0,
+            "ane": 1.0,
+            "bun_creatinine_ratio": 16.966701780050546,
+            "albumin_protein_index": 1.3114877048604001,
+            "comorbidity_count": 0.8578461400507669,
+            "risk_score": 0.7034601747523165,
+            "hemo_rbc_ratio": 0.47223575587885575
+        }
+    },
+    "class_balance": {
+        "class_0_count": 150,
+        "class_1_count": 250,
+        "class_0_percentage": 37.5,
+        "class_1_percentage": 62.5,
+        "imbalance_ratio": 1.6666666666666667,
+        "is_imbalanced": true
+    }
+}

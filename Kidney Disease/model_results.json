@@ -1,0 +1,70 @@
+{
+    "best_model": "Logistic Regression",
+    "best_roc_auc": 1.0,
+    "comparison": [
+        {
+            "Model": "Logistic Regression",
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1-Score": 1.0,
+            "ROC-AUC": 1.0,
+            "Sensitivity": 1.0,
+            "Specificity": 1.0
+        },
+        {
+            "Model": "Naive Bayes",
+            "Accuracy": 0.95,
+            "Precision": 1.0,
+            "Recall": 0.92,
+            "F1-Score": 0.9583333333333334,
+            "ROC-AUC": 1.0,
+            "Sensitivity": 0.92,
+            "Specificity": 1.0
+        },
+        {
+            "Model": "k-NN",
+            "Accuracy": 0.9875,
+            "Precision": 1.0,
+            "Recall": 0.98,
+            "F1-Score": 0.98989898989899,
+            "ROC-AUC": 0.9996666666666667,
+            "Sensitivity": 0.98,
+            "Specificity": 1.0
+        }
+    ],
+    "tuning_results": {
+        "Logistic Regression": {
+            "best_params": {
+                "C": 1,
+                "penalty": "l1",
+                "solver": "saga"
+            },
+            "test_roc_auc": 1.0,
+            "improvement": 0.0
+        },
+        "k-NN": {
+            "best_params": {
+                "metric": "manhattan",
+                "n_neighbors": 9,
+                "weights": "distance"
+            },
+            "test_roc_auc": 0.9993333333333334,
+            "improvement": -0.0003333333333332966
+        }
+    },
+    "cv_results": {
+        "Logistic Regression": {
+            "10-fold_mean": 0.9997333333333334,
+            "10-fold_std": 0.0007999999999999785
+        },
+        "Naive Bayes": {
+            "10-fold_mean": 1.0,
+            "10-fold_std": 0.0
+        },
+        "k-NN": {
+            "10-fold_mean": 0.9993333333333334,
+            "10-fold_std": 0.0008944271909998918
+        }
+    }
+}
